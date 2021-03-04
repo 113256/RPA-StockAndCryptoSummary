@@ -1,0 +1,8 @@
+03/03/2021 13:08:56: Move file success
+03/03/2021 13:08:56: Starting Folder  Healthcheck: C:\Users\jackc\Desktop\Work\RPA\Own Projects\Config\Log Archive,C:\Users\jackc\Desktop\Work\RPA\Own Projects\Config\Working Folder
+03/03/2021 13:08:56: Checking Folder : C:\Users\jackc\Desktop\Work\RPA\Own Projects\Config\Log Archive
+03/03/2021 13:08:56: C:\Users\jackc\Desktop\Work\RPA\Own Projects\Config\Log Archive exists
+03/03/2021 13:08:56: C:\Users\jackc\Desktop\Work\RPA\Own Projects\Config\Log Archive check success, status = [C:\Users\jackc\Desktop\Work\RPA\Own Projects\Config\Log Archive] exists.
+03/03/2021 13:08:56: Checking Folder : C:\Users\jackc\Desktop\Work\RPA\Own Projects\Config\Working Folder
+03/03/2021 13:08:56: C:\Users\jackc\Desktop\Work\RPA\Own Projects\Config\Working Folder doesn't exist. Robot has created the folder successfully.
+03/03/2021 13:08:56: C:\Users\jackc\Desktop\Work\RPA\Own Projects\Config\Working Folder check success, status = [C:\Users\jackc\Desktop\Work\RPA\Own Projects\Config\Working Folder] doesn't exist. Robot has created the folder successfully.

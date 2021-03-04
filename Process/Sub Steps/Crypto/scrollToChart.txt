@@ -1,0 +1,3 @@
+function(e){
+document.getElementById("react-tabs-2").scrollIntoView();
+}

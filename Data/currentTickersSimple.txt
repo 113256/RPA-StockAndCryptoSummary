@@ -1,0 +1,1 @@
+﻿[{"Type":"stock","Ticker":"SPCE"},{"Type":"stock","Ticker":"NIO"},{"Type":"crypto","Ticker":"Ethereum"},{"Type":"crypto","Ticker":"Cardano"}]

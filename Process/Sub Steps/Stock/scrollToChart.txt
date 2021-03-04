@@ -1,0 +1,3 @@
+function(e){
+document.getElementsByClassName("symbol-page-header__button symbol-page-header__button--portfolio")[0].scrollIntoView();
+}
