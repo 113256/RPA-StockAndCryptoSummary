@@ -1,4 +1,5 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="GetStockChart" this:GetStockChart.in_workingFolderPath="C:\Users\jackc\Desktop\Work\RPA\Own Projects\Config\Working Folder" this:GetStockChart.in_excelPath="C:\Users\jackc\Desktop\Work\RPA\Own Projects\Config\Working Folder\test.xlsx" this:GetStockChart.in_vbaPath="C:\Users\jackc\Desktop\Work\RPA\Own Projects\Config\VBA\VBAFunctions.xlsm" this:GetStockChart.in_ticker="GME" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:jc="clr-namespace:Jack_GeneralUtilities.ConfigUtil;assembly=Jack.GeneralUtilities" xmlns:je="clr-namespace:Jack_GeneralUtilities.ExcelUtil;assembly=Jack.GeneralUtilities" xmlns:ji="clr-namespace:Jack_GeneralUtilities.ImageUtil;assembly=Jack.GeneralUtilities" xmlns:jl="clr-namespace:Jack_GeneralUtilities.LogUtil;assembly=Jack.GeneralUtilities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Activity mc:Ignorable="sap sap2010" x:Class="GetStockChart" this:GetStockChart.in_workingFolderPath="C:\Users\jackc\Desktop\Work\RPA\Own Projects\Config\Working Folder" this:GetStockChart.in_excelPath="C:\Users\jackc\Desktop\Work\RPA\Own Projects\Config\Working Folder\test.xlsx" this:GetStockChart.in_vbaPath="C:\Users\jackc\Desktop\Work\RPA\Own Projects\Config\VBA\VBAFunctions.xlsm" this:GetStockChart.in_ticker="GME" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_workingFolderPath" Type="InArgument(x:String)" />
     <x:Property Name="in_excelPath" Type="InArgument(x:String)" />
@@ -10,7 +11,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>783.2,1475.2</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>605.6,3440.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>GetStockChart_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -78,9 +79,10 @@
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="GetStockChart" sap:VirtualizedContainerService.HintSize="461.6,1310.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="GetStockChart" sap:VirtualizedContainerService.HintSize="461.6,3276" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="C:\Users\jackc\Desktop\Work\RPA\Own Projects\Config\Working Folder\a.jpg" Name="imgPath" />
     </Sequence.Variables>
@@ -89,69 +91,17 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="420,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-      <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="375.2,347.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'RECT'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
-            <ui:Click.CursorPosition>
-              <ui:CursorPosition Position="Center">
-                <ui:CursorPosition.OffsetX>
-                  <InArgument x:TypeArguments="x:Int32" />
-                </ui:CursorPosition.OffsetX>
-                <ui:CursorPosition.OffsetY>
-                  <InArgument x:TypeArguments="x:Int32" />
-                </ui:CursorPosition.OffsetY>
-              </ui:CursorPosition>
-            </ui:Click.CursorPosition>
-            <ui:Click.Target>
-              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7c0eafe1-cfee-4b4f-b63d-deca7d37d2b5" InformativeScreenshot="28058a42a88acebcdc70d2ac38623b12" Selector="&lt;html app='chrome.exe' title='*Nasdaq*' /&gt;&lt;webctrl idx='1' parentid='highcharts-oldxdq2-0' tag='rect' /&gt;">
-                <ui:Target.TimeoutMS>
-                  <InArgument x:TypeArguments="x:Int32" />
-                </ui:Target.TimeoutMS>
-                <ui:Target.WaitForReady>
-                  <InArgument x:TypeArguments="ui:WaitForReady" />
-                </ui:Target.WaitForReady>
-              </ui:Target>
-            </ui:Click.Target>
-          </ui:Click>
-          <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'RECT'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
-            <ui:Click.CursorPosition>
-              <ui:CursorPosition Position="Center">
-                <ui:CursorPosition.OffsetX>
-                  <InArgument x:TypeArguments="x:Int32" />
-                </ui:CursorPosition.OffsetX>
-                <ui:CursorPosition.OffsetY>
-                  <InArgument x:TypeArguments="x:Int32" />
-                </ui:CursorPosition.OffsetY>
-              </ui:CursorPosition>
-            </ui:Click.CursorPosition>
-            <ui:Click.Target>
-              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7c0eafe1-cfee-4b4f-b63d-deca7d37d2b5" InformativeScreenshot="4cce401de86927702eb5382fd9526ad9" Selector="&lt;html app='chrome.exe' title='*Nasdaq' /&gt;&lt;webctrl tag='rect' class='highcharts-background' /&gt;">
-                <ui:Target.TimeoutMS>
-                  <InArgument x:TypeArguments="x:Int32" />
-                </ui:Target.TimeoutMS>
-                <ui:Target.WaitForReady>
-                  <InArgument x:TypeArguments="ui:WaitForReady" />
-                </ui:Target.WaitForReady>
-              </ui:Target>
-            </ui:Click.Target>
-          </ui:Click>
-        </Sequence>
-      </ui:CommentOut.Body>
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-    </ui:CommentOut>
-    <jc:UnitTestConfig Config="[Config]" sap:VirtualizedContainerService.HintSize="420,22.4" sap2010:WorkflowViewState.IdRef="UnitTestConfig_1" in_configPath="[configPath]" />
-    <jl:Write_Log DisplayName="Write Log" sap:VirtualizedContainerService.HintSize="420,22.4" sap2010:WorkflowViewState.IdRef="Write_Log_1" in_message="Extracting chart data..." />
+    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke UnitTestConfig workflow" sap:VirtualizedContainerService.HintSize="420,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Utilities\ConfigUtil\UnitTestConfig.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InOutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="Config">
+          <mva:VisualBasicReference x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="Config" />
+        </InOutArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_configPath">
+          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="configPath" />
+        </InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="420,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Extracting chart data...&quot;]" />
     <ui:InjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" DisplayName="Inject Js Script 'DIV'" sap:VirtualizedContainerService.HintSize="420,135.2" sap2010:WorkflowViewState.IdRef="InjectJsScript_1" ScriptCode="Process\Sub Steps\Stock\scrollToChart.txt">
       <ui:InjectJsScript.Target>
         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c5523ebf-a7fa-4a00-baf3-9f7ed6b73414" InformativeScreenshot="c3e153a13b186f1fe5e63469d8ac1b4c" Selector="&lt;html app='chrome.exe' title='*Nasdaq*' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div' idx='2' tag='DIV' /&gt;">
@@ -170,7 +120,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InjectJsScript>
-    <Sequence DisplayName="daily" sap:VirtualizedContainerService.HintSize="420,405.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence DisplayName="daily" sap:VirtualizedContainerService.HintSize="420,536.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -190,13 +140,37 @@
           <InArgument x:TypeArguments="x:String">[Path.Combine(in_workingFolderPath,"DailyChart.jpg")]</InArgument>
         </Assign.Value>
       </Assign>
-      <ji:TakeScreenshot in_Folder="{x:Null}" sap:VirtualizedContainerService.HintSize="378.4,22.4" sap2010:WorkflowViewState.IdRef="TakeScreenshot_1" in_screenshotSelector="&lt;html app='chrome.exe' title='*Nasdaq' /&gt;&lt;webctrl tag='rect' class='highcharts-background' /&gt;" io_FilePath="[imgPath]" />
-      <je:ExecuteVBA sap:VirtualizedContainerService.HintSize="378.4,22.4" sap2010:WorkflowViewState.IdRef="ExecuteVBA_1" in_VBAFilePath="[in_vbaPath]" in_macroName="InsertImageToNewSheetWithCoord" in_macroParams="[{in_excelPath, in_ticker,imgPath, &quot;0&quot;,&quot;0&quot;}]" />
+      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke TakeScreenshot workflow" sap:VirtualizedContainerService.HintSize="378.4,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Utilities\ImageUtil\TakeScreenshot.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="in_Folder">
+            <Literal x:TypeArguments="x:String" Value="" />
+          </InArgument>
+          <InOutArgument x:TypeArguments="x:String" x:Key="io_FilePath">
+            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="imgPath" />
+          </InOutArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_screenshotSelector">
+            <Literal x:TypeArguments="x:String">&lt;html app='chrome.exe' title='*Nasdaq' /&gt;&lt;webctrl tag='rect' class='highcharts-background' /&gt;</Literal>
+          </InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke ExecuteVBA workflow" sap:VirtualizedContainerService.HintSize="378.4,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Utilities\ExcelUtil\ExecuteVBA.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="in_VBAFilePath">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_vbaPath" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_macroName">
+            <Literal x:TypeArguments="x:String">InsertImageToNewSheetWithCoord</Literal>
+          </InArgument>
+          <InArgument x:TypeArguments="s:String[]" x:Key="in_macroParams">
+            <mva:VisualBasicValue x:TypeArguments="s:String[]" ExpressionText="{}{in_excelPath, in_ticker,imgPath, &quot;0&quot;,&quot;0&quot;}" />
+          </InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
     </Sequence>
-    <Sequence DisplayName="monthly" sap:VirtualizedContainerService.HintSize="420,68.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence DisplayName="monthly" sap:VirtualizedContainerService.HintSize="420,629.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
@@ -241,13 +215,37 @@
           <InArgument x:TypeArguments="x:String">[Path.Combine(in_workingFolderPath,"MonthlyChart.jpg")]</InArgument>
         </Assign.Value>
       </Assign>
-      <ji:TakeScreenshot in_Folder="{x:Null}" sap:VirtualizedContainerService.HintSize="378.4,22.4" sap2010:WorkflowViewState.IdRef="TakeScreenshot_2" in_screenshotSelector="&lt;html app='chrome.exe' title='*Nasdaq' /&gt;&lt;webctrl tag='rect' class='highcharts-background' /&gt;" io_FilePath="[imgPath]" />
-      <je:ExecuteVBA sap:VirtualizedContainerService.HintSize="378.4,22.4" sap2010:WorkflowViewState.IdRef="ExecuteVBA_2" in_VBAFilePath="[in_vbaPath]" in_macroName="InsertImageToNewSheetWithCoord" in_macroParams="[{in_excelPath, in_ticker,imgPath, &quot;0&quot;,&quot;300&quot;}]" />
+      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke TakeScreenshot workflow" sap:VirtualizedContainerService.HintSize="378.4,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="Utilities\ImageUtil\TakeScreenshot.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="in_Folder">
+            <Literal x:TypeArguments="x:String" Value="" />
+          </InArgument>
+          <InOutArgument x:TypeArguments="x:String" x:Key="io_FilePath">
+            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="imgPath" />
+          </InOutArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_screenshotSelector">
+            <Literal x:TypeArguments="x:String">&lt;html app='chrome.exe' title='*Nasdaq' /&gt;&lt;webctrl tag='rect' class='highcharts-background' /&gt;</Literal>
+          </InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke ExecuteVBA workflow" sap:VirtualizedContainerService.HintSize="378.4,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="Utilities\ExcelUtil\ExecuteVBA.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="in_VBAFilePath">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_vbaPath" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_macroName">
+            <Literal x:TypeArguments="x:String">InsertImageToNewSheetWithCoord</Literal>
+          </InArgument>
+          <InArgument x:TypeArguments="s:String[]" x:Key="in_macroParams">
+            <mva:VisualBasicValue x:TypeArguments="s:String[]" ExpressionText="{}{in_excelPath, in_ticker,imgPath, &quot;0&quot;,&quot;300&quot;}" />
+          </InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
     </Sequence>
-    <Sequence DisplayName="1yearly" sap:VirtualizedContainerService.HintSize="420,68.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+    <Sequence DisplayName="1yearly" sap:VirtualizedContainerService.HintSize="420,684" sap2010:WorkflowViewState.IdRef="Sequence_5">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
@@ -292,13 +290,33 @@
           <InArgument x:TypeArguments="x:String">[Path.Combine(in_workingFolderPath,"YearlyChart.jpg")]</InArgument>
         </Assign.Value>
       </Assign>
-      <ji:TakeScreenshot in_Folder="{x:Null}" sap:VirtualizedContainerService.HintSize="378.4,22.4" sap2010:WorkflowViewState.IdRef="TakeScreenshot_3" in_screenshotSelector="&lt;html app='chrome.exe' title='*Nasdaq' /&gt;&lt;webctrl tag='rect' class='highcharts-background' /&gt;" io_FilePath="[imgPath]" />
-      <je:ExecuteVBA sap:VirtualizedContainerService.HintSize="378.4,22.4" sap2010:WorkflowViewState.IdRef="ExecuteVBA_3" in_VBAFilePath="[in_vbaPath]" in_macroName="InsertImageToNewSheetWithCoord" in_macroParams="[{in_excelPath, in_ticker,imgPath, &quot;0&quot;,&quot;600&quot;}]" />
+      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke TakeScreenshot workflow" sap:VirtualizedContainerService.HintSize="378.4,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="Utilities\ImageUtil\TakeScreenshot.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="in_Folder">
+            <Literal x:TypeArguments="x:String" Value="" />
+          </InArgument>
+          <InOutArgument x:TypeArguments="x:String" x:Key="io_FilePath">[imgPath]</InOutArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_screenshotSelector">&lt;html app='chrome.exe' title='*Nasdaq' /&gt;&lt;webctrl tag='rect' class='highcharts-background' /&gt;</InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke ExecuteVBA workflow" sap:VirtualizedContainerService.HintSize="378.4,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" UnSafe="False" WorkflowFileName="Utilities\ExcelUtil\ExecuteVBA.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="in_VBAFilePath">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_vbaPath" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_macroName">
+            <Literal x:TypeArguments="x:String">InsertImageToNewSheetWithCoord</Literal>
+          </InArgument>
+          <InArgument x:TypeArguments="s:String[]" x:Key="in_macroParams">
+            <mva:VisualBasicValue x:TypeArguments="s:String[]" ExpressionText="{}{in_excelPath, in_ticker,imgPath, &quot;0&quot;,&quot;600&quot;}" />
+          </InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
     </Sequence>
-    <Sequence DisplayName="Max" sap:VirtualizedContainerService.HintSize="420,68.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+    <Sequence DisplayName="Max" sap:VirtualizedContainerService.HintSize="420,684" sap2010:WorkflowViewState.IdRef="Sequence_6">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
@@ -343,8 +361,28 @@
           <InArgument x:TypeArguments="x:String">[Path.Combine(in_workingFolderPath,"MaxChart.jpg")]</InArgument>
         </Assign.Value>
       </Assign>
-      <ji:TakeScreenshot in_Folder="{x:Null}" sap:VirtualizedContainerService.HintSize="378.4,22.4" sap2010:WorkflowViewState.IdRef="TakeScreenshot_4" in_screenshotSelector="&lt;html app='chrome.exe' title='*Nasdaq' /&gt;&lt;webctrl tag='rect' class='highcharts-background' /&gt;" io_FilePath="[imgPath]" />
-      <je:ExecuteVBA sap:VirtualizedContainerService.HintSize="378.4,22.4" sap2010:WorkflowViewState.IdRef="ExecuteVBA_4" in_VBAFilePath="[in_vbaPath]" in_macroName="InsertImageToNewSheetWithCoord" in_macroParams="[{in_excelPath, in_ticker,imgPath, &quot;0&quot;,&quot;900&quot;}]" />
+      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke TakeScreenshot workflow" sap:VirtualizedContainerService.HintSize="378.4,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" UnSafe="False" WorkflowFileName="Utilities\ImageUtil\TakeScreenshot.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="in_Folder">
+            <Literal x:TypeArguments="x:String" Value="" />
+          </InArgument>
+          <InOutArgument x:TypeArguments="x:String" x:Key="io_FilePath">[imgPath]</InOutArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_screenshotSelector">&lt;html app='chrome.exe' title='*Nasdaq' /&gt;&lt;webctrl tag='rect' class='highcharts-background' /&gt;</InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke ExecuteVBA workflow" sap:VirtualizedContainerService.HintSize="378.4,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_13" UnSafe="False" WorkflowFileName="Utilities\ExcelUtil\ExecuteVBA.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="in_VBAFilePath">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_vbaPath" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_macroName">
+            <Literal x:TypeArguments="x:String">InsertImageToNewSheetWithCoord</Literal>
+          </InArgument>
+          <InArgument x:TypeArguments="s:String[]" x:Key="in_macroParams">
+            <mva:VisualBasicValue x:TypeArguments="s:String[]" ExpressionText="{}{in_excelPath, in_ticker,imgPath, &quot;0&quot;,&quot;900&quot;}" />
+          </InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
     </Sequence>
     <ui:ExcelApplicationScope Password="{x:Null}" CreateNewFile="False" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="420,52.8" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" Visible="False" WorkbookPath="[in_excelPath]">
       <ui:ExcelApplicationScope.Body>

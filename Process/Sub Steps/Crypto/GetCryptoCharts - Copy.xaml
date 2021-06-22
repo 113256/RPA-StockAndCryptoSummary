@@ -1,4 +1,5 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="GetStockChart" this:GetStockChart.in_workingFolderPath="C:\Users\jackc\Desktop\Work\RPA\Own Projects\Config\Working Folder" this:GetStockChart.in_excelPath="C:\Users\jackc\Desktop\Work\RPA\Own Projects\Config\Working Folder\test.xlsx" this:GetStockChart.in_vbaPath="C:\Users\jackc\Desktop\Work\RPA\Own Projects\Config\VBA\VBAFunctions.xlsm" this:GetStockChart.in_ticker="Ethereum" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:je="clr-namespace:Jack_GeneralUtilities.ExcelUtil;assembly=Jack.GeneralUtilities" xmlns:ji="clr-namespace:Jack_GeneralUtilities.ImageUtil;assembly=Jack.GeneralUtilities" xmlns:jl="clr-namespace:Jack_GeneralUtilities.LogUtil;assembly=Jack.GeneralUtilities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Activity mc:Ignorable="sap sap2010" x:Class="GetStockChart" this:GetStockChart.in_workingFolderPath="C:\Users\jackc\Desktop\Work\RPA\Own Projects\Config\Working Folder" this:GetStockChart.in_excelPath="C:\Users\jackc\Desktop\Work\RPA\Own Projects\Config\Working Folder\test.xlsx" this:GetStockChart.in_vbaPath="C:\Users\jackc\Desktop\Work\RPA\Own Projects\Config\VBA\VBAFunctions.xlsm" this:GetStockChart.in_ticker="Ethereum" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_workingFolderPath" Type="InArgument(x:String)" />
     <x:Property Name="in_excelPath" Type="InArgument(x:String)" />
@@ -8,7 +9,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>783.2,2115.2</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>605.6,2444.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>GetStockChart_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -81,14 +82,10 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="GetStockChart" sap:VirtualizedContainerService.HintSize="475.2,1950.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="GetStockChart" sap:VirtualizedContainerService.HintSize="475.2,2280" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="C:\Users\jackc\Desktop\Work\RPA\Own Projects\Config\Working Folder\a.jpg" Name="imgPath" />
-      <Variable x:TypeArguments="scg:List(x:String)" Name="listOfChartConfig">
-        <Variable.Default>
-          <mva:VisualBasicValue x:TypeArguments="scg:List(x:String)" ExpressionText="new List(Of String)" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="scg:List(x:String)" Default="[new List(Of String)]" Name="listOfChartConfig" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -156,10 +153,10 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <jl:Write_Log DisplayName="Write Log" sap:VirtualizedContainerService.HintSize="433.6,22.4" sap2010:WorkflowViewState.IdRef="Write_Log_1" in_message="Extracting chart data..." />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Extracting chart data...&quot;]" />
     <ui:InjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" DisplayName="Inject Js Script 'DIV'" sap:VirtualizedContainerService.HintSize="433.6,135.2" sap2010:WorkflowViewState.IdRef="InjectJsScript_1" ScriptCode="Process\Sub Steps\Crypto\scrollToChart.txt">
       <ui:InjectJsScript.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c5523ebf-a7fa-4a00-baf3-9f7ed6b73414" InformativeScreenshot="c3e153a13b186f1fe5e63469d8ac1b4c" Selector="&lt;html app='chrome.exe' title='*CoinMarketCap*' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='6' parentid='__next' tag='DIV' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c5523ebf-a7fa-4a00-baf3-9f7ed6b73414" InformativeScreenshot="b491b0bc13158306990a46cd982047c8" Selector="&lt;html app='chrome.exe' title='Ethereum price today, ETH live marketcap, chart, and info | CoinMarketCap' /&gt;&lt;webctrl tag='DIV' parentclass='main-content' idx='2' /&gt;&lt;webctrl parentid='__next' tag='DIV' idx='1' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -175,10 +172,10 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InjectJsScript>
-    <Sequence sap2010:Annotation.AnnotationText="buttton name, img name, y-coord" DisplayName="init list" sap:VirtualizedContainerService.HintSize="433.6,112.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
+    <Sequence sap2010:Annotation.AnnotationText="buttton name, img name, y-coord" DisplayName="init list" sap:VirtualizedContainerService.HintSize="433.6,333.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
@@ -188,19 +185,19 @@
       <AddToCollection x:TypeArguments="x:String" Collection="[listOfChartConfig]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="AddToCollection`1_3" Item="1Y,1 Year Chart.jpg,600" />
       <AddToCollection x:TypeArguments="x:String" Collection="[listOfChartConfig]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="AddToCollection`1_4" Item="ALL,Max Chart.jpg,900" />
     </Sequence>
-    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="433.6,567.2" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[listOfChartConfig]">
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="433.6,698.4" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[listOfChartConfig]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:String">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:String" Name="chartConfig" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,432.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="375.2,564" sap2010:WorkflowViewState.IdRef="Sequence_8">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="262.4,52.8" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
               <ui:Click.CursorPosition>
                 <ui:CursorPosition Position="Center">
                   <ui:CursorPosition.OffsetX>
@@ -228,8 +225,8 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:Click>
-            <Delay Duration="[TimeSpan.FromMilliseconds(3000)]" sap:VirtualizedContainerService.HintSize="262.4,22.4" sap2010:WorkflowViewState.IdRef="Delay_4" />
-            <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+            <Delay Duration="[TimeSpan.FromMilliseconds(3000)]" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="Delay_4" />
+            <Assign sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_5">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[imgPath]</OutArgument>
               </Assign.To>
@@ -237,8 +234,32 @@
                 <InArgument x:TypeArguments="x:String">[Path.Combine(in_workingFolderPath,chartConfig.Split(","c)(1))]</InArgument>
               </Assign.Value>
             </Assign>
-            <ji:TakeScreenshot in_Folder="{x:Null}" sap:VirtualizedContainerService.HintSize="262.4,22.4" sap2010:WorkflowViewState.IdRef="TakeScreenshot_5" in_screenshotSelector="&lt;html app='chrome.exe' title='*CoinMarketCap*' /&gt;&lt;webctrl tag='rect' class='highcharts-background' parentclass='highcharts-root' /&gt;" io_FilePath="[imgPath]" />
-            <je:ExecuteVBA sap:VirtualizedContainerService.HintSize="262.4,22.4" sap2010:WorkflowViewState.IdRef="ExecuteVBA_5" in_VBAFilePath="[in_vbaPath]" in_macroName="InsertImageToNewSheetWithCoord" in_macroParams="[{in_excelPath, in_ticker,imgPath, &quot;0&quot;,chartConfig.Split(&quot;,&quot;c)(2)}]" />
+            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke TakeScreenshot workflow" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Utilities\ImageUtil\TakeScreenshot.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="in_Folder">
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </InArgument>
+                <InOutArgument x:TypeArguments="x:String" x:Key="io_FilePath">
+                  <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="imgPath" />
+                </InOutArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_screenshotSelector">
+                  <Literal x:TypeArguments="x:String">&lt;html app='chrome.exe' title='*CoinMarketCap*' /&gt;&lt;webctrl tag='rect' class='highcharts-background' parentclass='highcharts-root' /&gt;</Literal>
+                </InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke ExecuteVBA workflow" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Utilities\ExcelUtil\ExecuteVBA.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="in_VBAFilePath">
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_vbaPath" />
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_macroName">
+                  <Literal x:TypeArguments="x:String">InsertImageToNewSheetWithCoord</Literal>
+                </InArgument>
+                <InArgument x:TypeArguments="s:String[]" x:Key="in_macroParams">
+                  <mva:VisualBasicValue x:TypeArguments="s:String[]" ExpressionText="{}{in_excelPath, in_ticker,imgPath, &quot;0&quot;,chartConfig.Split(&quot;,&quot;c)(2)}" />
+                </InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
           </Sequence>
         </ActivityAction>
       </ui:ForEach.Body>
@@ -269,181 +290,5 @@
         </ActivityAction>
       </ui:ExcelApplicationScope.Body>
     </ui:ExcelApplicationScope>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="433.6,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_2">
-      <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="241.6,488" sap2010:WorkflowViewState.IdRef="Sequence_10">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="daily" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_1">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:String">[imgPath]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[Path.Combine(in_workingFolderPath,"DailyChart.jpg")]</InArgument>
-              </Assign.Value>
-            </Assign>
-            <ji:TakeScreenshot in_Folder="{x:Null}" sap:VirtualizedContainerService.HintSize="262.4,22.4" sap2010:WorkflowViewState.IdRef="TakeScreenshot_1" in_screenshotSelector="&lt;html app='chrome.exe' title='*CoinMarketCap*' /&gt;&lt;webctrl tag='rect' class='highcharts-background' parentclass='highcharts-root' /&gt;" io_FilePath="[imgPath]" />
-            <je:ExecuteVBA sap:VirtualizedContainerService.HintSize="262.4,22.4" sap2010:WorkflowViewState.IdRef="ExecuteVBA_1" in_VBAFilePath="[in_vbaPath]" in_macroName="InsertImageToNewSheetWithCoord" in_macroParams="[{in_excelPath, in_ticker,imgPath, &quot;0&quot;,&quot;0&quot;}]" />
-          </Sequence>
-          <Sequence DisplayName="monthly" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
-              <ui:Click.CursorPosition>
-                <ui:CursorPosition Position="Center">
-                  <ui:CursorPosition.OffsetX>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:CursorPosition.OffsetX>
-                  <ui:CursorPosition.OffsetY>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:CursorPosition.OffsetY>
-                </ui:CursorPosition>
-              </ui:Click.CursorPosition>
-              <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3b971f20-4f6d-4f43-bae3-fbbbedfefdc8" InformativeScreenshot="2804de8b026b774af58b993899a9f5e9" Selector="&lt;html app='chrome.exe' title='*CoinMarketCap*' /&gt;&lt;webctrl tag='LI' aaname='1M' /&gt;">
-                  <ui:Target.TimeoutMS>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:Target.TimeoutMS>
-                  <ui:Target.WaitForReady>
-                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                  </ui:Target.WaitForReady>
-                </ui:Target>
-              </ui:Click.Target>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </ui:Click>
-            <Delay Duration="[TimeSpan.FromMilliseconds(3000)]" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
-            <Assign sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_2">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:String">[imgPath]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[Path.Combine(in_workingFolderPath,"MonthlyChart.jpg")]</InArgument>
-              </Assign.Value>
-            </Assign>
-            <ji:TakeScreenshot in_Folder="{x:Null}" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="TakeScreenshot_2" in_screenshotSelector="&lt;html app='chrome.exe' title='*CoinMarketCap*' /&gt;&lt;webctrl tag='rect' class='highcharts-background' parentclass='highcharts-root' /&gt;" io_FilePath="[imgPath]" />
-            <je:ExecuteVBA sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="ExecuteVBA_2" in_VBAFilePath="[in_vbaPath]" in_macroName="InsertImageToNewSheetWithCoord" in_macroParams="[{in_excelPath, in_ticker,imgPath, &quot;0&quot;,&quot;300&quot;}]" />
-          </Sequence>
-          <Sequence DisplayName="1yearly" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
-              <ui:Click.CursorPosition>
-                <ui:CursorPosition Position="Center">
-                  <ui:CursorPosition.OffsetX>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:CursorPosition.OffsetX>
-                  <ui:CursorPosition.OffsetY>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:CursorPosition.OffsetY>
-                </ui:CursorPosition>
-              </ui:Click.CursorPosition>
-              <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3b971f20-4f6d-4f43-bae3-fbbbedfefdc8" InformativeScreenshot="df4374fd73c99c8858c09bdd50d0dc5a" Selector="&lt;html app='chrome.exe' title='*CoinMarketCap*' /&gt;&lt;webctrl tag='LI' aaname='1Y' /&gt;">
-                  <ui:Target.TimeoutMS>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:Target.TimeoutMS>
-                  <ui:Target.WaitForReady>
-                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                  </ui:Target.WaitForReady>
-                </ui:Target>
-              </ui:Click.Target>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </ui:Click>
-            <Delay Duration="[TimeSpan.FromMilliseconds(3000)]" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="Delay_2" />
-            <Assign sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_3">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:String">[imgPath]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[Path.Combine(in_workingFolderPath,"YearlyChart.jpg")]</InArgument>
-              </Assign.Value>
-            </Assign>
-            <ji:TakeScreenshot in_Folder="{x:Null}" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="TakeScreenshot_3" in_screenshotSelector="&lt;html app='chrome.exe' title='*CoinMarketCap*' /&gt;&lt;webctrl tag='rect' class='highcharts-background' parentclass='highcharts-root' /&gt;" io_FilePath="[imgPath]" />
-            <je:ExecuteVBA sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="ExecuteVBA_3" in_VBAFilePath="[in_vbaPath]" in_macroName="InsertImageToNewSheetWithCoord" in_macroParams="[{in_excelPath, in_ticker,imgPath, &quot;0&quot;,&quot;600&quot;}]" />
-          </Sequence>
-          <Sequence DisplayName="Max" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
-              <ui:Click.CursorPosition>
-                <ui:CursorPosition Position="Center">
-                  <ui:CursorPosition.OffsetX>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:CursorPosition.OffsetX>
-                  <ui:CursorPosition.OffsetY>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:CursorPosition.OffsetY>
-                </ui:CursorPosition>
-              </ui:Click.CursorPosition>
-              <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3b971f20-4f6d-4f43-bae3-fbbbedfefdc8" InformativeScreenshot="3b4114318464a3f1366b721695001636" Selector="&lt;html app='chrome.exe' title='*CoinMarketCap*' /&gt;&lt;webctrl tag='LI' aaname='ALL' /&gt;">
-                  <ui:Target.TimeoutMS>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:Target.TimeoutMS>
-                  <ui:Target.WaitForReady>
-                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                  </ui:Target.WaitForReady>
-                </ui:Target>
-              </ui:Click.Target>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </ui:Click>
-            <Delay Duration="[TimeSpan.FromMilliseconds(3000)]" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="Delay_3" />
-            <Assign sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_4">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:String">[imgPath]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[Path.Combine(in_workingFolderPath,"MaxChart.jpg")]</InArgument>
-              </Assign.Value>
-            </Assign>
-            <ji:TakeScreenshot in_Folder="{x:Null}" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="TakeScreenshot_4" in_screenshotSelector="&lt;html app='chrome.exe' title='*CoinMarketCap*' /&gt;&lt;webctrl tag='rect' class='highcharts-background' parentclass='highcharts-root' /&gt;" io_FilePath="[imgPath]" />
-            <je:ExecuteVBA sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="ExecuteVBA_4" in_VBAFilePath="[in_vbaPath]" in_macroName="InsertImageToNewSheetWithCoord" in_macroParams="[{in_excelPath, in_ticker,imgPath, &quot;0&quot;,&quot;900&quot;}]" />
-          </Sequence>
-        </Sequence>
-      </ui:CommentOut.Body>
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-    </ui:CommentOut>
   </Sequence>
 </Activity>

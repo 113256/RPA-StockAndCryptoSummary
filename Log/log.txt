@@ -1,8 +1,340 @@
-03/03/2021 13:08:56: Move file success
-03/03/2021 13:08:56: Starting Folder  Healthcheck: C:\Users\jackc\Desktop\Work\RPA\Own Projects\Config\Log Archive,C:\Users\jackc\Desktop\Work\RPA\Own Projects\Config\Working Folder
-03/03/2021 13:08:56: Checking Folder : C:\Users\jackc\Desktop\Work\RPA\Own Projects\Config\Log Archive
-03/03/2021 13:08:56: C:\Users\jackc\Desktop\Work\RPA\Own Projects\Config\Log Archive exists
-03/03/2021 13:08:56: C:\Users\jackc\Desktop\Work\RPA\Own Projects\Config\Log Archive check success, status = [C:\Users\jackc\Desktop\Work\RPA\Own Projects\Config\Log Archive] exists.
-03/03/2021 13:08:56: Checking Folder : C:\Users\jackc\Desktop\Work\RPA\Own Projects\Config\Working Folder
-03/03/2021 13:08:56: C:\Users\jackc\Desktop\Work\RPA\Own Projects\Config\Working Folder doesn't exist. Robot has created the folder successfully.
-03/03/2021 13:08:56: C:\Users\jackc\Desktop\Work\RPA\Own Projects\Config\Working Folder check success, status = [C:\Users\jackc\Desktop\Work\RPA\Own Projects\Config\Working Folder] doesn't exist. Robot has created the folder successfully.
+19/06/2021 18:43:08: Move file success
+19/06/2021 18:43:08: Starting Folder  Healthcheck: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Log Archive,C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder
+19/06/2021 18:43:08: Checking Folder : C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Log Archive
+19/06/2021 18:43:08: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Log Archive exists
+19/06/2021 18:43:08: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Log Archive check success, status = [C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Log Archive] exists.
+19/06/2021 18:43:08: Checking Folder : C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder
+19/06/2021 18:43:08: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder doesn't exist. Robot has created the folder successfully.
+19/06/2021 18:43:08: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder check success, status = [C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder] doesn't exist. Robot has created the folder successfully.
+19/06/2021 18:43:30: Change input language to en-US, (using outside package)
+19/06/2021 18:43:30: Killing process: EXCEL
+19/06/2021 18:43:30: Killing process: sap
+19/06/2021 18:43:30: Checking Outlook Exists
+19/06/2021 18:43:30: Outlook already open
+19/06/2021 18:43:30: Try get config path from orchestrator , asset name = SSC_Config_File_Path
+19/06/2021 18:43:34: read config txt
+19/06/2021 18:43:34: Unable to get config path from orchestrator, use C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Projects\StocksProject\Config.xlsx
+19/06/2021 18:43:36: Initialization state start
+19/06/2021 18:43:36: Starting File  Healthcheck: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\VBA\VBAFunctions.xlsm,C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Template\Tracker File Template.xlsx
+19/06/2021 18:43:36: Checking File : C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\VBA\VBAFunctions.xlsm
+19/06/2021 18:43:36: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\VBA\VBAFunctions.xlsm exists
+19/06/2021 18:43:36: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\VBA\VBAFunctions.xlsm check success, status = [C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\VBA\VBAFunctions.xlsm] exists.
+19/06/2021 18:43:36: Checking File : C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Template\Tracker File Template.xlsx
+19/06/2021 18:43:36: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Template\Tracker File Template.xlsx exists
+19/06/2021 18:43:36: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Template\Tracker File Template.xlsx check success, status = [C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Template\Tracker File Template.xlsx] exists.
+19/06/2021 18:43:36: Starting Folder  Healthcheck: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Log Archive,C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Tracker File Archive,C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder
+19/06/2021 18:43:36: Checking Folder : C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Log Archive
+19/06/2021 18:43:36: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Log Archive exists
+19/06/2021 18:43:36: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Log Archive check success, status = [C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Log Archive] exists.
+19/06/2021 18:43:36: Checking Folder : C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Tracker File Archive
+19/06/2021 18:43:36: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Tracker File Archive exists
+19/06/2021 18:43:36: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Tracker File Archive check success, status = [C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Tracker File Archive] exists.
+19/06/2021 18:43:36: Checking Folder : C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder
+19/06/2021 18:43:36: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder exists
+19/06/2021 18:43:36: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder check success, status = [C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder] exists.
+19/06/2021 18:43:36: Starting Credential  Healthcheck: 
+19/06/2021 18:43:36: Trying to access C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Projects\StocksProject
+19/06/2021 18:43:36: Sucessfully accessed C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Projects\StocksProject
+19/06/2021 18:43:37: Copying file from C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\VBA\VBAFunctions.xlsm to C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\VBAFunctions.xlsm, overwrite? True
+19/06/2021 18:43:37: Copy file success
+19/06/2021 18:43:37: Sending email...
+19/06/2021 18:43:37: To = jackchan715@hotmail.com, cc = ， bcc=
+19/06/2021 18:43:37: Subject = [RPA SCMC] StocksProject - Health Check at time: 06:43:37, Status: PASS, 
+19/06/2021 18:43:37: Attachments: 
+19/06/2021 18:43:37: IsDraft? = False
+19/06/2021 18:43:37: Executing macro: SendOutlookMail in file C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\VBAFunctions.xlsm, with params: [RPA SCMC] StocksProject - Health Check at time: 06:43:37, Status: PASS, ,Health Check Status:<br><br>
+<p style="font-weight:bold">File healthcheck:</p><ul><li>[C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\VBA\VBAFunctions.xlsm] exists. </li><li>[C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Template\Tracker File Template.xlsx] exists. </li></ul><br><br>
+<p style="font-weight:bold">Folder healthcheck:</p><ul><li>[C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Log Archive] exists. </li><li>[C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Tracker File Archive] exists. </li><li>[C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder] exists. </li></ul><br><br>
+<p style="font-weight:bold">Shared drive healthcheck:</p>Connected to C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Projects\StocksProject successfully.
+19/06/2021 18:43:38: Macro execution success
+19/06/2021 18:43:38: Mail Sent Successfully
+19/06/2021 18:43:38: Initialization state END
+19/06/2021 18:43:38: PROCESS STATE START
+19/06/2021 18:43:38: Copying file from C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\VBA\VBAFunctions.xlsm to C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\VBAFunctions.xlsm, overwrite? True
+19/06/2021 18:43:38: Deleting file from C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\VBAFunctions.xlsm
+19/06/2021 18:43:38: Delete file success
+19/06/2021 18:43:38: Copy file success
+19/06/2021 18:43:38: Killing process: EXCEL
+19/06/2021 18:43:39: Killing process: sap
+19/06/2021 18:43:39: Copying file from C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Template\Tracker File Template.xlsx to C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Tracker File 19062021.xlsx, overwrite? True
+19/06/2021 18:43:39: Copy file success
+19/06/2021 18:43:39: Chcek C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\VBAFunctions.xlsm is not corrupted
+19/06/2021 18:43:40: File not corrupted, continue...
+19/06/2021 18:43:41: Killing process: EXCEL
+19/06/2021 18:43:41: Killing process: sap
+19/06/2021 18:43:41: Creating version folder....
+19/06/2021 18:43:41: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Output\StocksProject\2021-06-19 already exists, dont create
+19/06/2021 18:43:41: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Output\StocksProject\2021-06-19 not empty, get latest version folder
+19/06/2021 18:43:41: Version numbers = 0,1,2
+19/06/2021 18:43:41: Max Version Number = 2
+19/06/2021 18:43:41: Create folder C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Output\StocksProject\2021-06-19\Version 3
+19/06/2021 18:43:41: Final folder = C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Output\StocksProject\2021-06-19\Final\ already exists
+19/06/2021 18:43:41: Copying file from C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Template\StockCryptoSummaryTemplate.xlsm to C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Summary-19062021 184341.xlsm, overwrite? True
+19/06/2021 18:43:41: Copy file success
+19/06/2021 18:44:43: PROCESS STATE START, plant - GME
+19/06/2021 18:44:43: Chcek C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\VBAFunctions.xlsm is not corrupted
+19/06/2021 18:44:45: File not corrupted, continue...
+19/06/2021 18:44:45: Updating tracker file C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Tracker File 19062021.xlsx
+19/06/2021 18:44:46: initialize browser: http://nasdaq.com/market-activity/stocks/GME
+19/06/2021 18:44:46: Open new browser
+19/06/2021 18:46:09: Change input language to en-US, (using outside package)
+19/06/2021 18:46:09: Killing process: EXCEL
+19/06/2021 18:46:09: Killing process: sap
+19/06/2021 18:46:09: Checking Outlook Exists
+19/06/2021 18:46:09: Outlook already open
+19/06/2021 18:46:09: Try get config path from orchestrator , asset name = SSC_Config_File_Path
+19/06/2021 18:46:09: read config txt
+19/06/2021 18:46:09: Unable to get config path from orchestrator, use C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Projects\StocksProject\Config.xlsx
+19/06/2021 18:46:11: Initialization state start
+19/06/2021 18:46:11: Starting File  Healthcheck: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\VBA\VBAFunctions.xlsm,C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Template\Tracker File Template.xlsx
+19/06/2021 18:46:11: Checking File : C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\VBA\VBAFunctions.xlsm
+19/06/2021 18:46:11: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\VBA\VBAFunctions.xlsm exists
+19/06/2021 18:46:11: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\VBA\VBAFunctions.xlsm check success, status = [C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\VBA\VBAFunctions.xlsm] exists.
+19/06/2021 18:46:11: Checking File : C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Template\Tracker File Template.xlsx
+19/06/2021 18:46:11: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Template\Tracker File Template.xlsx exists
+19/06/2021 18:46:11: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Template\Tracker File Template.xlsx check success, status = [C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Template\Tracker File Template.xlsx] exists.
+19/06/2021 18:46:11: Starting Folder  Healthcheck: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Log Archive,C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Tracker File Archive,C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder
+19/06/2021 18:46:11: Checking Folder : C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Log Archive
+19/06/2021 18:46:11: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Log Archive exists
+19/06/2021 18:46:11: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Log Archive check success, status = [C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Log Archive] exists.
+19/06/2021 18:46:11: Checking Folder : C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Tracker File Archive
+19/06/2021 18:46:11: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Tracker File Archive exists
+19/06/2021 18:46:11: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Tracker File Archive check success, status = [C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Tracker File Archive] exists.
+19/06/2021 18:46:11: Checking Folder : C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder
+19/06/2021 18:46:11: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder exists
+19/06/2021 18:46:11: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder check success, status = [C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder] exists.
+19/06/2021 18:46:11: Starting Credential  Healthcheck: 
+19/06/2021 18:46:11: Trying to access C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Projects\StocksProject
+19/06/2021 18:46:11: Sucessfully accessed C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Projects\StocksProject
+19/06/2021 18:46:11: Copying file from C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\VBA\VBAFunctions.xlsm to C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\VBAFunctions.xlsm, overwrite? True
+19/06/2021 18:46:11: Deleting file from C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\VBAFunctions.xlsm
+19/06/2021 18:46:11: Delete file success
+19/06/2021 18:46:11: Copy file success
+19/06/2021 18:46:11: Sending email...
+19/06/2021 18:46:11: To = jackchan715@hotmail.com, cc = ， bcc=
+19/06/2021 18:46:11: Subject = [RPA SCMC] StocksProject - Health Check at time: 06:46:11, Status: PASS, 
+19/06/2021 18:46:11: Attachments: 
+19/06/2021 18:46:11: IsDraft? = False
+19/06/2021 18:46:11: Executing macro: SendOutlookMail in file C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\VBAFunctions.xlsm, with params: [RPA SCMC] StocksProject - Health Check at time: 06:46:11, Status: PASS, ,Health Check Status:<br><br>
+<p style="font-weight:bold">File healthcheck:</p><ul><li>[C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\VBA\VBAFunctions.xlsm] exists. </li><li>[C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Template\Tracker File Template.xlsx] exists. </li></ul><br><br>
+<p style="font-weight:bold">Folder healthcheck:</p><ul><li>[C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Log Archive] exists. </li><li>[C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Tracker File Archive] exists. </li><li>[C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder] exists. </li></ul><br><br>
+<p style="font-weight:bold">Shared drive healthcheck:</p>Connected to C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Projects\StocksProject successfully.
+19/06/2021 18:46:13: Macro execution success
+19/06/2021 18:46:13: Mail Sent Successfully
+19/06/2021 18:46:13: Initialization state END
+19/06/2021 18:46:13: PROCESS STATE START
+19/06/2021 18:46:13: Copying file from C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\VBA\VBAFunctions.xlsm to C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\VBAFunctions.xlsm, overwrite? True
+19/06/2021 18:46:13: Deleting file from C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\VBAFunctions.xlsm
+19/06/2021 18:46:13: Delete file success
+19/06/2021 18:46:13: Copy file success
+19/06/2021 18:46:13: Killing process: EXCEL
+19/06/2021 18:46:13: Killing process: sap
+19/06/2021 18:46:13: Copying file from C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Template\Tracker File Template.xlsx to C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Tracker File 19062021.xlsx, overwrite? True
+19/06/2021 18:46:13: Copy file success
+19/06/2021 18:46:13: Chcek C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\VBAFunctions.xlsm is not corrupted
+19/06/2021 18:46:14: File not corrupted, continue...
+19/06/2021 18:46:15: Killing process: EXCEL
+19/06/2021 18:46:15: Killing process: sap
+19/06/2021 18:46:15: Creating version folder....
+19/06/2021 18:46:15: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Output\StocksProject\2021-06-19 already exists, dont create
+19/06/2021 18:46:15: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Output\StocksProject\2021-06-19 not empty, get latest version folder
+19/06/2021 18:46:15: Version numbers = 0,1,2,3
+19/06/2021 18:46:15: Max Version Number = 3
+19/06/2021 18:46:15: Create folder C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Output\StocksProject\2021-06-19\Version 4
+19/06/2021 18:46:15: Final folder = C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Output\StocksProject\2021-06-19\Final\ already exists
+19/06/2021 18:46:15: Copying file from C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Template\StockCryptoSummaryTemplate.xlsm to C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Summary-19062021 184615.xlsm, overwrite? True
+19/06/2021 18:46:15: Copy file success
+19/06/2021 18:46:17: PROCESS STATE START, plant - GME
+19/06/2021 18:46:17: Chcek C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\VBAFunctions.xlsm is not corrupted
+19/06/2021 18:46:18: File not corrupted, continue...
+19/06/2021 18:46:19: Updating tracker file C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Tracker File 19062021.xlsx
+19/06/2021 18:46:20: initialize browser: http://nasdaq.com/market-activity/stocks/GME
+19/06/2021 18:46:20: Attach to existing browser
+19/06/2021 18:46:20: Updating tracker file C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Tracker File 19062021.xlsx
+19/06/2021 18:46:21: Checking stock summary of ticker = GME
+19/06/2021 18:46:21: waiting for loading icon to vainsh
+19/06/2021 18:46:24: loading icon vanished.!
+19/06/2021 18:46:26: Verifying URL
+19/06/2021 18:46:27: url is = https://www.nasdaq.com/market-activity/stocks/gme
+19/06/2021 18:46:28: Extracting key details...
+19/06/2021 18:47:13: Ticker = GME
+19/06/2021 18:47:13: Closing Price = $213.82
+19/06/2021 18:47:13: Closing Price Difference = -9.77
+19/06/2021 18:47:13: Price Difference Percentage = (-4.37%)
+19/06/2021 18:47:13: Exchange = NYSE
+19/06/2021 18:47:13: Sector = Consumer Services
+19/06/2021 18:47:13: Market Cap = 14,834,671,235
+19/06/2021 18:47:13: {"Ticker":"GME","Closing Price":"$213.82","Closing Price Difference":"-9.77","Price Difference Percentage":"(-4.37%)","Exchange":"NYSE","Sector":"Consumer Services","Market Cap":"14,834,671,235"}
+19/06/2021 18:47:13: Updating tracker file C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Tracker File 19062021.xlsx
+19/06/2021 18:47:15: Extracting chart data...
+19/06/2021 18:47:19: Deleting file from C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Daily Chart.jpg
+19/06/2021 18:47:19: File doesnt exist, skip
+19/06/2021 18:47:19: Screenshot saved at: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Daily Chart.jpg
+19/06/2021 18:47:19: Executing macro: InsertImageToNewSheetWithCoord in file C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\VBAFunctions.xlsm, with params: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Summary-19062021 184615.xlsm,GME,C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Daily Chart.jpg,0,0
+19/06/2021 18:47:21: Macro execution success
+19/06/2021 18:47:25: Deleting file from C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Monthly Chart.jpg
+19/06/2021 18:47:25: File doesnt exist, skip
+19/06/2021 18:47:25: Screenshot saved at: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Monthly Chart.jpg
+19/06/2021 18:47:25: Executing macro: InsertImageToNewSheetWithCoord in file C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\VBAFunctions.xlsm, with params: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Summary-19062021 184615.xlsm,GME,C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Monthly Chart.jpg,0,300
+19/06/2021 18:47:26: Macro execution success
+19/06/2021 18:47:30: Deleting file from C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\1 Year Chart.jpg
+19/06/2021 18:47:30: File doesnt exist, skip
+19/06/2021 18:47:30: Screenshot saved at: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\1 Year Chart.jpg
+19/06/2021 18:47:30: Executing macro: InsertImageToNewSheetWithCoord in file C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\VBAFunctions.xlsm, with params: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Summary-19062021 184615.xlsm,GME,C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\1 Year Chart.jpg,0,600
+19/06/2021 18:47:32: Macro execution success
+19/06/2021 18:47:36: Deleting file from C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Max Chart.jpg
+19/06/2021 18:47:36: File doesnt exist, skip
+19/06/2021 18:47:36: Screenshot saved at: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Max Chart.jpg
+19/06/2021 18:47:36: Executing macro: InsertImageToNewSheetWithCoord in file C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\VBAFunctions.xlsm, with params: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Summary-19062021 184615.xlsm,GME,C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Max Chart.jpg,0,900
+19/06/2021 18:47:37: Macro execution success
+19/06/2021 18:47:38: Updating tracker file C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Tracker File 19062021.xlsx
+19/06/2021 18:47:39: PROCESS STATE END
+19/06/2021 18:47:39: Transaction GME Success
+19/06/2021 18:47:39: PROCESS STATE START, plant - NIO
+19/06/2021 18:47:39: Chcek C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\VBAFunctions.xlsm is not corrupted
+19/06/2021 18:47:39: File not corrupted, continue...
+19/06/2021 18:47:39: Updating tracker file C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Tracker File 19062021.xlsx
+19/06/2021 18:47:39: initialize browser: http://nasdaq.com/market-activity/stocks/NIO
+19/06/2021 18:47:39: Attach to existing browser
+19/06/2021 18:47:40: Updating tracker file C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Tracker File 19062021.xlsx
+19/06/2021 18:47:40: Checking stock summary of ticker = NIO
+19/06/2021 18:47:40: waiting for loading icon to vainsh
+19/06/2021 18:47:40: loading icon vanished.!
+19/06/2021 18:47:44: Verifying URL
+19/06/2021 18:47:44: url is = https://www.nasdaq.com/market-activity/stocks/nio
+19/06/2021 18:47:44: Extracting key details...
+19/06/2021 18:47:48: Ticker = NIO
+19/06/2021 18:47:48: Closing Price = $46.91
+19/06/2021 18:47:48: Closing Price Difference = -0.45
+19/06/2021 18:47:48: Price Difference Percentage = (-0.95%)
+19/06/2021 18:47:48: Exchange = NYSE
+19/06/2021 18:47:48: Sector = Finance
+19/06/2021 18:47:48: Market Cap = 76,862,884,493
+19/06/2021 18:47:48: {"Ticker":"NIO","Closing Price":"$46.91","Closing Price Difference":"-0.45","Price Difference Percentage":"(-0.95%)","Exchange":"NYSE","Sector":"Finance","Market Cap":"76,862,884,493"}
+19/06/2021 18:47:48: Updating tracker file C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Tracker File 19062021.xlsx
+19/06/2021 18:47:51: Extracting chart data...
+19/06/2021 18:48:28: Deleting file from C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Daily Chart.jpg
+19/06/2021 18:48:28: Delete file success
+19/06/2021 18:48:28: Screenshot saved at: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Daily Chart.jpg
+19/06/2021 18:48:28: Executing macro: InsertImageToNewSheetWithCoord in file C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\VBAFunctions.xlsm, with params: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Summary-19062021 184615.xlsm,NIO,C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Daily Chart.jpg,0,0
+19/06/2021 18:48:30: Macro execution success
+19/06/2021 18:48:35: Deleting file from C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Monthly Chart.jpg
+19/06/2021 18:48:35: Delete file success
+19/06/2021 18:48:35: Screenshot saved at: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Monthly Chart.jpg
+19/06/2021 18:48:35: Executing macro: InsertImageToNewSheetWithCoord in file C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\VBAFunctions.xlsm, with params: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Summary-19062021 184615.xlsm,NIO,C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Monthly Chart.jpg,0,300
+19/06/2021 18:48:36: Macro execution success
+19/06/2021 18:48:40: Deleting file from C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\1 Year Chart.jpg
+19/06/2021 18:48:40: Delete file success
+19/06/2021 18:48:40: Screenshot saved at: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\1 Year Chart.jpg
+19/06/2021 18:48:40: Executing macro: InsertImageToNewSheetWithCoord in file C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\VBAFunctions.xlsm, with params: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Summary-19062021 184615.xlsm,NIO,C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\1 Year Chart.jpg,0,600
+19/06/2021 18:48:42: Macro execution success
+19/06/2021 18:48:46: Deleting file from C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Max Chart.jpg
+19/06/2021 18:48:46: Delete file success
+19/06/2021 18:48:46: Screenshot saved at: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Max Chart.jpg
+19/06/2021 18:48:46: Executing macro: InsertImageToNewSheetWithCoord in file C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\VBAFunctions.xlsm, with params: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Summary-19062021 184615.xlsm,NIO,C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Max Chart.jpg,0,900
+19/06/2021 18:48:48: Macro execution success
+19/06/2021 18:48:49: Updating tracker file C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Tracker File 19062021.xlsx
+19/06/2021 18:48:49: PROCESS STATE END
+19/06/2021 18:48:49: Transaction NIO Success
+19/06/2021 18:48:49: PROCESS STATE START, plant - PLTR
+19/06/2021 18:48:49: Chcek C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\VBAFunctions.xlsm is not corrupted
+19/06/2021 18:48:49: File not corrupted, continue...
+19/06/2021 18:48:49: Updating tracker file C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Tracker File 19062021.xlsx
+19/06/2021 18:48:50: initialize browser: http://nasdaq.com/market-activity/stocks/PLTR
+19/06/2021 18:48:50: Attach to existing browser
+19/06/2021 18:48:50: Updating tracker file C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Tracker File 19062021.xlsx
+19/06/2021 18:48:51: Checking stock summary of ticker = PLTR
+19/06/2021 18:48:51: waiting for loading icon to vainsh
+19/06/2021 18:48:51: loading icon vanished.!
+19/06/2021 18:48:56: Verifying URL
+19/06/2021 18:48:56: url is = https://www.nasdaq.com/market-activity/stocks/pltr
+19/06/2021 18:48:56: Extracting key details...
+19/06/2021 18:49:36: Ticker = PLTR
+19/06/2021 18:49:36: Closing Price = $25.37
+19/06/2021 18:49:36: Closing Price Difference = -0.08
+19/06/2021 18:49:36: Price Difference Percentage = (-0.31%)
+19/06/2021 18:49:36: Exchange = NYSE
+19/06/2021 18:49:36: Sector = Technology
+19/06/2021 18:49:36: Market Cap = 47,613,053,758
+19/06/2021 18:49:36: {"Ticker":"PLTR","Closing Price":"$25.37","Closing Price Difference":"-0.08","Price Difference Percentage":"(-0.31%)","Exchange":"NYSE","Sector":"Technology","Market Cap":"47,613,053,758"}
+19/06/2021 18:49:36: Updating tracker file C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Tracker File 19062021.xlsx
+19/06/2021 18:49:38: Extracting chart data...
+19/06/2021 18:49:43: Deleting file from C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Daily Chart.jpg
+19/06/2021 18:49:43: Delete file success
+19/06/2021 18:49:43: Screenshot saved at: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Daily Chart.jpg
+19/06/2021 18:49:43: Executing macro: InsertImageToNewSheetWithCoord in file C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\VBAFunctions.xlsm, with params: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Summary-19062021 184615.xlsm,PLTR,C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Daily Chart.jpg,0,0
+19/06/2021 18:49:45: Macro execution success
+19/06/2021 18:49:49: Deleting file from C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Monthly Chart.jpg
+19/06/2021 18:49:49: Delete file success
+19/06/2021 18:49:49: Screenshot saved at: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Monthly Chart.jpg
+19/06/2021 18:49:49: Executing macro: InsertImageToNewSheetWithCoord in file C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\VBAFunctions.xlsm, with params: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Summary-19062021 184615.xlsm,PLTR,C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Monthly Chart.jpg,0,300
+19/06/2021 18:49:51: Macro execution success
+19/06/2021 18:49:55: Deleting file from C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\1 Year Chart.jpg
+19/06/2021 18:49:55: Delete file success
+19/06/2021 18:49:55: Screenshot saved at: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\1 Year Chart.jpg
+19/06/2021 18:49:55: Executing macro: InsertImageToNewSheetWithCoord in file C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\VBAFunctions.xlsm, with params: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Summary-19062021 184615.xlsm,PLTR,C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\1 Year Chart.jpg,0,600
+19/06/2021 18:49:57: Macro execution success
+19/06/2021 18:50:01: Deleting file from C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Max Chart.jpg
+19/06/2021 18:50:01: Delete file success
+19/06/2021 18:50:01: Screenshot saved at: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Max Chart.jpg
+19/06/2021 18:50:01: Executing macro: InsertImageToNewSheetWithCoord in file C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\VBAFunctions.xlsm, with params: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Summary-19062021 184615.xlsm,PLTR,C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Max Chart.jpg,0,900
+19/06/2021 18:50:03: Macro execution success
+19/06/2021 18:50:04: Updating tracker file C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Tracker File 19062021.xlsx
+19/06/2021 18:50:05: PROCESS STATE END
+19/06/2021 18:50:05: Transaction PLTR Success
+19/06/2021 18:50:05: PROCESS STATE START, plant - Ethereum
+19/06/2021 18:50:05: Chcek C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\VBAFunctions.xlsm is not corrupted
+19/06/2021 18:50:05: File not corrupted, continue...
+19/06/2021 18:50:05: Updating tracker file C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Tracker File 19062021.xlsx
+19/06/2021 18:50:05: initialize browser: https://coinmarketcap.com/currencies/Ethereum
+19/06/2021 18:50:05: Attach to existing browser
+19/06/2021 18:50:05: Updating tracker file C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Tracker File 19062021.xlsx
+19/06/2021 18:50:06: Checking crypto summary of ticker = Ethereum
+19/06/2021 18:50:06: waiting for loading icon to vainsh
+19/06/2021 18:50:06: loading icon vanished.!
+19/06/2021 18:50:13: Verifying URL
+19/06/2021 18:50:13: url is = https://coinmarketcap.com/currencies/ethereum/
+19/06/2021 18:50:44: Updating tracker file C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Tracker File 19062021.xlsx
+19/06/2021 18:50:46: Not yet max retry, current retry count = 0, max retry = 3
+19/06/2021 18:50:46: Current retry count = 1, MaxRetryCount=3
+19/06/2021 18:50:46: Deleting file from C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\GenerateStockAndCryptoSummary\ExceptionScreenshots\ExceptionScreenshot.png
+19/06/2021 18:50:46: Delete file success
+19/06/2021 18:50:46: Screenshot saved at: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\GenerateStockAndCryptoSummary\ExceptionScreenshots\ExceptionScreenshot.png
+19/06/2021 18:50:46: Sending email...
+19/06/2021 18:50:46: To = jackchan715@hotmail.com, cc = ， bcc=
+19/06/2021 18:50:46: Subject = [RPA SCMC] System Exception Occured: {Plant}
+19/06/2021 18:50:46: Attachments: C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\GenerateStockAndCryptoSummary\ExceptionScreenshots\ExceptionScreenshot.png,C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\GenerateStockAndCryptoSummary\Log\log.txt
+19/06/2021 18:50:46: IsDraft? = False
+19/06/2021 18:50:46: Executing macro: SendOutlookMail in file C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\VBAFunctions.xlsm, with params: [RPA SCMC] System Exception Occured: {Plant},System Exception Occurred
+<br><br>
+Source: Throw
+<br><br>
+Message: Cannot find the UI element corresponding to this selector: <webctrl tag='SPAN' class='qe1dn9-0 RYkpI' idx='1' />
+<br><br>
+Stack Trace:    at System.Activities.Statements.Throw.Execute(CodeActivityContext context)
+   at System.Activities.CodeActivity.InternalExecute(ActivityInstance instance, ActivityExecutor executor, BookmarkManager bookmarkManager)
+   at System.Activities.ActivityInstance.Execute(ActivityExecutor executor, BookmarkManager bookmarkManager)
+   at System.Activities.Runtime.ActivityExecutor.ExecuteActivityWorkItem.ExecuteBody(ActivityExecutor executor, BookmarkManager bookmarkManager, Location resultLocation)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   a
+19/06/2021 18:50:47: Macro execution success
+19/06/2021 18:50:47: Mail Sent Successfully
+19/06/2021 18:50:47: Killing process: EXCEL
+19/06/2021 18:50:47: Killing process: sap
+19/06/2021 18:50:47: Killing process: EXCEL
+19/06/2021 18:50:47: Killing process: sap
+19/06/2021 06:50:48: Retry Processing.,,
+19/06/2021 18:50:48: PROCESS STATE START, plant - Ethereum
+19/06/2021 18:50:48: Chcek C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\VBAFunctions.xlsm is not corrupted
+19/06/2021 18:50:49: File not corrupted, continue...
+19/06/2021 18:50:49: Updating tracker file C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Tracker File 19062021.xlsx
+19/06/2021 18:50:49: initialize browser: https://coinmarketcap.com/currencies/Ethereum
+19/06/2021 18:50:49: Attach to existing browser
+19/06/2021 18:50:51: Updating tracker file C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Tracker File 19062021.xlsx
+19/06/2021 18:50:52: Checking crypto summary of ticker = Ethereum
+19/06/2021 18:50:52: waiting for loading icon to vainsh
+19/06/2021 18:50:52: loading icon vanished.!
+19/06/2021 18:50:53: Verifying URL
+19/06/2021 18:50:53: url is = https://coinmarketcap.com/currencies/ethereum/
+19/06/2021 18:51:24: Updating tracker file C:\Users\jackc\Desktop\Work\RPA\Own Projects UiPath\Config\Working Folder\Tracker File 19062021.xlsx

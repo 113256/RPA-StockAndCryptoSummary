@@ -1,0 +1,159 @@
+﻿<Activity mc:Ignorable="sap sap2010 sads" x:Class="Convert_DataTable_to_HTML" this:Convert_DataTable_to_HTML.in_Font="Georgia" this:Convert_DataTable_to_HTML.in_Color="#fff" this:Convert_DataTable_to_HTML.in_BgColor="#1c87c9"
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+ xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
+ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+ xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
+ xmlns:sd="clr-namespace:System.Data;assembly=System.Data"
+ xmlns:this="clr-namespace:"
+ xmlns:ui="http://schemas.uipath.com/workflow/activities"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="out_HTMLStr" Type="OutArgument(x:String)" />
+    <x:Property Name="in_DT_Tmp" Type="InArgument(sd:DataTable)" />
+    <x:Property Name="in_Font" Type="InArgument(x:String)" />
+    <x:Property Name="in_Color" Type="InArgument(x:String)" />
+    <x:Property Name="in_BgColor" Type="InArgument(x:String)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Credentials.Activities</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.Mail.Exchange.Activities</x:String>
+      <x:String>UiPath.Mail.IMAP.Activities</x:String>
+      <x:String>UiPath.Mail.Outlook.Activities</x:String>
+      <x:String>UiPath.Mail.POP3.Activities</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.PDF.Activities</x:String>
+      <x:String>UiPath.XPS.Activities</x:String>
+      <x:String>UiPath.Orchestrator.Client</x:String>
+      <x:String>UiPath.Orchestrator.Client.Models</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Plugin.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.Credentials.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OrchestratorClient</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Data.Entity</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Font-Family (Optional)&#xD;&#xA;Color (Optional)&#xD;&#xA;Background Color (Optional)&#xD;&#xA;&#xD;&#xA;Data Table (Required)" DisplayName="Custom HTML Sequence" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <If Condition="[in_DT_Tmp is Nothing]" DisplayName="If Nothing was Given" sap2010:WorkflowViewState.IdRef="If_1">
+      <If.Then>
+        <Sequence DisplayName="Testing Sequence" sap2010:WorkflowViewState.IdRef="Sequence_11">
+          <ui:BuildDataTable DataTable="[in_DT_Tmp]" DisplayName="Build Data Table" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Account&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Cost_x0020_Center&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Line_x0020_Amount&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;Account&gt;2300&lt;/Account&gt;&#xA;    &lt;Cost_x0020_Center&gt;CX13421312&lt;/Cost_x0020_Center&gt;&#xA;    &lt;Line_x0020_Amount&gt;1500&lt;/Line_x0020_Amount&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;Account&gt;2400&lt;/Account&gt;&#xA;    &lt;Cost_x0020_Center&gt;CX1342&lt;/Cost_x0020_Center&gt;&#xA;    &lt;Line_x0020_Amount&gt;42432&lt;/Line_x0020_Amount&gt;&#xA;  &lt;/TableName&gt;&#xA;&lt;/NewDataSet&gt;" />
+          <ui:LogMessage DisplayName="Log Message" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="Please ensure that you provide a data table." />
+        </Sequence>
+      </If.Then>
+    </If>
+    <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim rowHeader As String = &quot;background-color:&quot; &amp; bgColor &amp; &quot;;color:&quot;&amp; color&#xD;&#xA;Dim tableStyle As String = &quot;border:1px solid black; width:95%; border-collapse: collapse; font-family:&quot;&amp; font &amp;&quot;;&quot;&#xD;&#xA;Dim dataStyle As String = &quot;border:1px solid black; text-align:center; font-family:&quot; &amp; font &amp; &quot;;&quot;&#xD;&#xA;&#xD;&#xA;    res =&#xD;&#xA;        &lt;table style=&lt;%= tableStyle %&gt;&gt;&#xD;&#xA;			&lt;thead style=&lt;%= rowHeader %&gt;&gt;&#xD;&#xA;                &lt;tr&gt;&#xD;&#xA;                    &lt;%=&#xD;&#xA;                        From col As DataColumn In dt.Columns.Cast(Of DataColumn)()&#xD;&#xA;                        Select &lt;th align='center' style='border:1px solid black;'&gt;&lt;%= col.ColumnName %&gt;&lt;/th&gt;&#xD;&#xA;                    %&gt;&#xD;&#xA;                &lt;/tr&gt;&#xD;&#xA;            &lt;/thead&gt;&#xD;&#xA;            &lt;tbody&gt;&#xD;&#xA;                &lt;%=&#xD;&#xA;                    From row As DataRow In dt.Rows.Cast(Of DataRow)()&#xD;&#xA;                    Select&#xD;&#xA;                    &lt;tr&gt;&#xD;&#xA;                        &lt;%=&#xD;&#xA;                            From col As DataColumn In dt.Columns.Cast(Of DataColumn)()&#xD;&#xA;                            Select &lt;td style=&lt;%= dataStyle %&gt;&gt;&lt;%= row(col) %&gt;&lt;/td&gt;&#xD;&#xA;                        %&gt;&#xD;&#xA;                    &lt;/tr&gt;&#xD;&#xA;                %&gt;&#xD;&#xA;            &lt;/tbody&gt;&#xD;&#xA;        &lt;/table&gt;.ToString()&#xD;&#xA;&#xD;&#xA;" DisplayName="Convert DataTable to HTML" sap2010:WorkflowViewState.IdRef="InvokeCode_6">
+      <ui:InvokeCode.Arguments>
+        <InArgument x:TypeArguments="sd:DataTable" x:Key="dt">[in_DT_Tmp]</InArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="res">[out_HTMLStr]</OutArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="bgColor">[in_BgColor]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="color">[in_Color]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="font">[in_Font]</InArgument>
+      </ui:InvokeCode.Arguments>
+    </ui:InvokeCode>
+    <sads:DebugSymbol.Symbol>d2tDOlxVc2Vyc1xQMTMyMTAxMVxPbmVEcml2ZSAtIE5DUyBQdGUgTHRkXFByb2plY3RzXFRlbXBsYXRlc1xTY3JpcHRzXFNuaXBwZXRzXENvbnZlcnQgRGF0YVRhYmxlIHRvIEhUTUwueGFtbBEBqAEBrQEBBAHZAQHhAQEDAXYBfgECZAN3DgIBAWUFbAoCAQ1tBXUVAgECZRNlKwIBDmcJahQCAQ9yPnJIAgELcUBxTAIBCXA9cEoCAQdvP29KAgEFcz1zRgIBA2gLaOkQAgESaQtpqQECARBoKGg1AgETaXhppgECARE=</sads:DebugSymbol.Symbol>
+  </Sequence>
+  <sap2010:WorkflowViewState.ViewStateManager>
+    <sap2010:ViewStateManager>
+      <sap2010:ViewStateData Id="BuildDataTable_2" sap:VirtualizedContainerService.HintSize="314,59" />
+      <sap2010:ViewStateData Id="LogMessage_2" sap:VirtualizedContainerService.HintSize="314,91" />
+      <sap2010:ViewStateData Id="Sequence_11" sap:VirtualizedContainerService.HintSize="336,314">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="If_1" sap:VirtualizedContainerService.HintSize="200,51">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="InvokeCode_6" sap:VirtualizedContainerService.HintSize="200,51">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="222,353">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="ActivityBuilder_1" sap:VirtualizedContainerService.HintSize="262,433" />
+    </sap2010:ViewStateManager>
+  </sap2010:WorkflowViewState.ViewStateManager>
+</Activity>

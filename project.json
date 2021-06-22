@@ -1,12 +1,13 @@
 {
-  "name": "Generate Stock And Crypto Summary",
+  "name": "GenerateStockAndCryptoSummary",
   "description": "Generate Stock And Crypto Summary",
-  "main": "MainState.xaml",
+  "main": "MainForm.xaml",
   "dependencies": {
-    "Jack.GeneralUtilities": "[1.0.15]",
     "LanguageChange": "[1.0.1]",
     "UiPath.Credentials.Activities": "[1.1.6479.13204]",
     "UiPath.Excel.Activities": "[2.9.5]",
+    "UiPath.Form.Activities": "[1.1.11]",
+    "UiPath.FormActivityLibrary": "[1.1.11]",
     "UiPath.Mail.Activities": "[1.8.6]",
     "UiPath.System.Activities": "[20.4.0]",
     "UiPath.UIAutomation.Activities": "[20.4.2]"
@@ -15,7 +16,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "20.4.1.0",
-  "projectVersion": "1.0.74",
+  "projectVersion": "1.0.0",
   "runtimeOptions": {
     "autoDispose": false,
     "isPausable": true,
@@ -51,13 +52,20 @@
       "output": []
     },
     {
-      "filePath": "Process\\Main Steps\\Add to list.xaml",
-      "uniqueId": "c461d4e4-9eb8-481e-a079-79de9a2c795a",
+      "filePath": "Process\\Main Steps\\Open Tickers Excel.xaml",
+      "uniqueId": "5e51711a-870d-4218-97ef-87fd6854645f",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "MainForm.xaml",
+      "uniqueId": "a4de4c37-9075-4c40-b329-5baacb7ed910",
       "input": [],
       "output": []
     }
   ],
   "isTemplate": false,
   "templateProjectData": {},
-  "publishData": {}
+  "publishData": {},
+  "targetFramework": "Legacy"
 }

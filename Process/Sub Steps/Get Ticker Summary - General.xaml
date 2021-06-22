@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Get_Stock_Summary" this:Get_Stock_Summary.in_ticker="NIO" this:Get_Stock_Summary.in_excelPath="C:\Users\jackc\Desktop\Work\RPA\Own Projects\Config\Working Folder\test.xlsx" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:jl="clr-namespace:Jack_GeneralUtilities.LogUtil;assembly=Jack.GeneralUtilities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Get_Stock_Summary" this:Get_Stock_Summary.in_ticker="NIO" this:Get_Stock_Summary.in_excelPath="C:\Users\jackc\Desktop\Work\RPA\Own Projects\Config\Working Folder\test.xlsx" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_ticker" Type="InArgument(x:String)" />
     <x:Property Name="browser" Type="InOutArgument(ui:Browser)" />
@@ -10,10 +10,10 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>784,1486.4</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>742.4,2185.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Get_Stock_Summary_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
-    <scg:List x:TypeArguments="x:String" Capacity="34">
+    <scg:List x:TypeArguments="x:String" Capacity="68">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -48,6 +48,7 @@
       <x:String>Jack_GeneralUtilities.LogUtil</x:String>
       <x:String>Jack_GeneralUtilities.ConfigUtil</x:String>
       <x:String>System.Security</x:String>
+      <x:String>System.Globalization</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -86,7 +87,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Get_Stock_Summary" sap:VirtualizedContainerService.HintSize="752.8,1321.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Get_Stock_Summary" sap:VirtualizedContainerService.HintSize="752.8,2020.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="txt" />
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="quoteDictionary" />
@@ -97,14 +98,14 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="init" sap:VirtualizedContainerService.HintSize="711.2,68.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="init" sap:VirtualizedContainerService.HintSize="711.2,385.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_2">
         <Assign.To>
           <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)">[quoteDictionary]</OutArgument>
         </Assign.To>
@@ -112,7 +113,7 @@
           <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)">[new Dictionary(Of String,Object)]</InArgument>
         </Assign.Value>
       </Assign>
-      <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+      <Assign sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_5">
         <Assign.To>
           <OutArgument x:TypeArguments="x:Object">[quoteDictionary("Ticker")]</OutArgument>
         </Assign.To>
@@ -120,7 +121,7 @@
           <InArgument x:TypeArguments="x:Object">[in_ticker]</InArgument>
         </Assign.Value>
       </Assign>
-      <jl:Write_Log DisplayName="Write Log" sap:VirtualizedContainerService.HintSize="262.4,22.4" sap2010:WorkflowViewState.IdRef="Write_Log_1" in_message="[&quot;Checking &quot;+in_type+&quot; summary of ticker = &quot;+in_ticker]" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Checking &quot;+in_type+&quot; summary of ticker = &quot;+in_ticker]" />
     </Sequence>
     <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Wait for loader icon to disappear workflow" sap:VirtualizedContainerService.HintSize="711.2,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Process\Sub Steps\Stock\Wait for loader icon to disappear.xaml">
       <ui:InvokeWorkflowFile.Arguments>
@@ -133,7 +134,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
-    <If Condition="[in_type.Equals(&quot;stock&quot;)]" sap:VirtualizedContainerService.HintSize="711.2,305.6" sap2010:WorkflowViewState.IdRef="If_2">
+    <If Condition="[in_type.Equals(&quot;Stock&quot;)]" sap:VirtualizedContainerService.HintSize="711.2,315.2" sap2010:WorkflowViewState.IdRef="If_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -169,56 +170,50 @@
         </ui:GetValue>
       </If.Else>
     </If>
-    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke VerifyURL workflow" sap:VirtualizedContainerService.HintSize="711.2,52.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Process\Sub Steps\Browser\VerifyURL.xaml">
+    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke VerifyURL workflow" sap:VirtualizedContainerService.HintSize="711.2,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Process\Sub Steps\Browser\VerifyURL.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="in_url">[in_urlToVerify]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
     <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[in_type]" sap:VirtualizedContainerService.HintSize="711.2,298.4" sap2010:WorkflowViewState.IdRef="Switch`1_2">
-      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" x:Key="stock" DisplayName="Invoke Get Details Of One Stock workflow" sap:VirtualizedContainerService.HintSize="374.4,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Process\Sub Steps\Stock\Get Details Of One Stock.xaml">
+      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" x:Key="Stock" DisplayName="Invoke Get Details Of One Stock workflow" sap:VirtualizedContainerService.HintSize="373.6,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Process\Sub Steps\Stock\Get Details Of One Stock.xaml">
         <ui:InvokeWorkflowFile.Arguments>
           <InOutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="quoteDictionary">[quoteDictionary]</InOutArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
-      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" x:Key="crypto" DisplayName="Invoke Get Details Of One Crypto workflow" sap:VirtualizedContainerService.HintSize="378.4,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Process\Sub Steps\Crypto\Get Details Of One Crypto.xaml">
+      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" x:Key="Crypto" DisplayName="Invoke Get Details Of One Crypto workflow" sap:VirtualizedContainerService.HintSize="378.4,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Process\Sub Steps\Crypto\Get Details Of One Crypto.xaml">
         <ui:InvokeWorkflowFile.Arguments>
-          <OutArgument x:TypeArguments="x:String" x:Key="out_quoteDictionaryJson">
-            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="out_quoteDictionaryJson" />
-          </OutArgument>
-          <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="quoteDictionary">
-            <mva:VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="quoteDictionary" />
-          </InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="in_ticker">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_ticker" />
-          </InArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_quoteDictionaryJson">[out_quoteDictionaryJson]</OutArgument>
+          <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="quoteDictionary">[quoteDictionary]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_ticker">[System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(in_ticker)]</InArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
     </Switch>
-    <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:Object)" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="711.2,52.8" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[quoteDictionary]">
+    <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:Object)" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="711.2,320" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[quoteDictionary]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="scg:KeyValuePair(x:String, x:Object)">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="scg:KeyValuePair(x:String, x:Object)" Name="item" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="241.6,115.2" sap2010:WorkflowViewState.IdRef="Sequence_11">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="375.2,185.6" sap2010:WorkflowViewState.IdRef="Sequence_11">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <jl:Write_Log DisplayName="Write Log" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="Write_Log_2" in_message="[item.Key+&quot; = &quot;+item.Value.ToString]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[item.Key+&quot; = &quot;+item.Value.ToString]" />
           </Sequence>
         </ActivityAction>
       </ui:ForEach.Body>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
@@ -231,6 +226,6 @@
         <InArgument x:TypeArguments="x:String">[Newtonsoft.Json.JsonConvert.SerializeObject(quoteDictionary)]</InArgument>
       </Assign.Value>
     </Assign>
-    <jl:Write_Log DisplayName="Write Log" sap:VirtualizedContainerService.HintSize="711.2,22.4" sap2010:WorkflowViewState.IdRef="Write_Log_3" in_message="[out_quoteDictionaryJson]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="711.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[out_quoteDictionaryJson]" />
   </Sequence>
 </Activity>
